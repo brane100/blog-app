@@ -17,7 +17,7 @@ export const todoSlice = createSlice({
             state.todos.push(todo)
         },
         removeTodo: (state, action) => {
-            console.log("nati")
+            console.log("should work on deleting it")
             state.todos = state.todos.filter((todo) =>
                 todo.id !== action.payload)
         }

@@ -5,12 +5,11 @@ import { removeTodo } from "../app/features/todo/todoslice";
 
 function Todos() {
     const todos = useSelector(state => state.todos)
-    // console.log(todos);
 
     const dispatch = useDispatch()
     return (
         <>
-            <div>Todos</div>
+            {/* <div>Todos</div> */}
             {todos.map((todo) =>
                 <li key={todo.id}>
                     <div>
